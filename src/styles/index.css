@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.root,
+#root,
+#docs-root {
+  background-color: #050d18;
+  --primary: 6, 18, 36;
+  --secondary: 160, 174, 192;
+  --accent: 113, 128, 150;
+  --background: 255, 255, 255;
+  --main: 13, 1, 6;
+  --header: 45, 55, 72;
+  --dark: 17, 24, 39;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(45, 73, 110, 0.41);
+  border-radius: 10rem;
+  padding: 4%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #050d18;
+  /* background-color: #4f91ee; */
+}
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .nav_btn {
+    @apply relative overflow-hidden rounded-xl py-1 font-semibold text-gray-100 duration-1000 before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:-z-10 before:m-auto before:w-[2px] before:bg-transparent before:duration-700 before:content-[''] hover:scale-[1.0] hover:bg-blue-500 hover:before:scale-x-[62] hover:before:bg-blue-500 md:my-auto md:flex md:items-center md:border-0 md:py-1 md:px-4;
+  }
+}

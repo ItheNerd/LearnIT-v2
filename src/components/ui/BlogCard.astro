@@ -1,0 +1,35 @@
+---
+import desk from "@/assets/blog.jpg";
+---
+
+<div
+  class="rounded-[20px] sm:bg-white bg-clip-border flex flex-col max-w-[20rem] w-[25vw] sm:min-w-min min-w-max hover:scale-[1.01] group/image duration-500 ease hover:shadow-md drop-shadow-sm flex-shrink bg-gray-200 p-5 bg-opacity-50"
+>
+  <div
+    class="h-56 p-1 drop-shadow-sm group-hover/image:drop-shadow-xl hidden sm:block"
+  >
+    <img src={desk} class="w-full h-full rounded-xl" alt="" />
+  </div>
+  <div class="flex items-center justify-center sm:justify-start gap-4 px-2">
+    <div class="flex">
+      <p class="font-mono text-xs font-extralight">Feb 10, 2023</p>
+    </div>
+    <button
+      class="font-mono text-xs capitalize bg-opacity-50 border-0 badge badge-ghost"
+      >tag</button
+    >
+  </div>
+  <div class="flex items-center justify-between px-2 md:items-start">
+    <div class="mb-2">
+      <p class="text-lg font-bold">Abstract Colors</p>
+      <p class="mt-1 text-sm font-medium md:mt-2">By Esthera Jackson</p>
+    </div>
+    <div class="w-8 h-8 md:mt-2 lg:mt-0">
+      <img
+        class="object-cover w-full h-full rounded-full"
+        src="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar1.eeef2af6dfcd3ff23cb8.png"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
